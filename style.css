@@ -14,6 +14,15 @@ h1, h2 {
     color: #007bff;
 }
 
+.bg-image {
+    background-size: cover;
+    background-position: center;
+}
+
+.text-white {
+    color: white !important;
+}
+
 section {
     background: #fff;
     padding: 20px;
@@ -24,10 +33,6 @@ section {
 section h2 {
     border-bottom: 2px solid #007bff;
     padding-bottom: 10px;
-}
-
-.list-inline-item a {
-    margin: 5px 0;
 }
 
 .list-group-item {
