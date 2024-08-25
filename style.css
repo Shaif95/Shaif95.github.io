@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f0f8ff; /* Lightened background */
     color: #333;
 }
 
@@ -28,6 +28,7 @@ section {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
 section h2 {
@@ -35,7 +36,14 @@ section h2 {
     padding-bottom: 10px;
 }
 
-.list-group-item {
-    background-color: #f1f1f1;
-    margin-bottom: 10px;
+.btn {
+    font-weight: bold;
+}
+
+#recent-updates .card {
+    transition: transform 0.2s;
+}
+
+#recent-updates .card:hover {
+    transform: scale(1.05);
 }
