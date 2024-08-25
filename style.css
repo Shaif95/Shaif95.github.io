@@ -40,10 +40,33 @@ section h2 {
     font-weight: bold;
 }
 
-#recent-updates .card {
-    transition: transform 0.2s;
+/* Recent Updates */
+#recent-updates .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
-#recent-updates .card:hover {
-    transform: scale(1.05);
+#recent-updates .update-date {
+    flex: 0 0 100px;
+    color: #555;
+    font-size: 0.85rem;
 }
+
+#recent-updates .update-content {
+    flex: 1;
+    color: #333;
+}
+
+/* Light Text Colors */
+.text-primary { color: #007bff !important; }
+.text-success { color: #28a745 !important; }
+.text-danger { color: #dc3545 !important; }
+.text-warning { color: #ffc107 !important; }
+.text-info { color: #17a2b8 !important; }
+.text-secondary { color: #6c757d !important; }
