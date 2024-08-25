@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+#profile-img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #007bff;
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.list-inline-item a {
+    margin: 5px 0;
+}
+
+.list-group-item {
+    background-color: #f1f1f1;
+    margin-bottom: 10px;
+}
