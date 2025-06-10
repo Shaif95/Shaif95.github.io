@@ -5,151 +5,169 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shaif Chowdhury</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .glass-card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.4) !important;
+            backdrop-filter: blur(10px);
+        }
+
+        .glass-header {
+            height: 320px;
+            background: linear-gradient(to right, #dbeafe, #e0f7fa);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-box {
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        #profile-img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+
+        .update-content.gold {
+            color: #FFD700;
+            font-weight: bold;
+        }
+    </style>
 </head>
-<body style="background-color: #f0f8ff;"> <!-- Lightened background -->
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body>
+    <!-- Transparent Glass Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Shaif Chowdhury</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">Shaif Chowdhury</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="publications.html">Publications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="activities.html">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Me</a>
-                    </li>
-                    
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Header Section -->
-    <header class="text-center" style="background-color: #e0e0e0; height: 300px;">
-        <div class="container py-4">
-            <img src="./profile-img.jpg" alt="Profile Image" class="rounded-circle" id="profile-img">
-            <div class="mt-3 p-2 bg-dark text-white d-inline-block" style="opacity: 0.85;">
-                <h1>Shaif Chowdhury</h1>
-            </div>
+    <!-- Header with Profile -->
+    <header class="glass-header">
+        <div class="profile-box text-dark">
+            <img src="./profile-img.jpg" alt="Profile Image" id="profile-img">
+            <h1 class="mt-3">Shaif Chowdhury</h1>
         </div>
     </header>
 
+    <!-- Main Content -->
     <div class="container my-5">
         <!-- About Me Section -->
-        <section id="about-me">
+        <section id="about-me" class="glass-card mb-4">
             <h2>About Me</h2>
-            <p>
-                I completed my Ph.D. in Machine Learning at Baylor University, with a dissertation titled
+            <p>I completed my Ph.D. in Machine Learning at Baylor University, with a dissertation titled
                 "Deep Learning of Visual Features with Limited Supervision." My research focused on Deep Learning
-                and Computer Vision. 
+                and Computer Vision.
             </p>
         </section>
 
-        <!-- Connect with Me Section -->
-        <section id="links" class="my-5 text-center">
+        <!-- Connect Links -->
+        <section id="links" class="glass-card text-center mb-4">
             <h2>Connect with Me</h2>
-            <div class="d-flex justify-content-center">
-                <a href="https://www.linkedin.com/in/shaif-chowdhury-95m/" target="_blank" class="btn btn-lg btn-primary m-2 rounded-pill">
-                    <i class="bi bi-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://github.com/Shaif95" target="_blank" class="btn btn-lg btn-dark m-2 rounded-pill">
-                    <i class="bi bi-github"></i> GitHub
-                </a>
-                <a href="https://scholar.google.com/citations?user=qJkLzcAAAAAJ&hl=en" target="_blank" class="btn btn-lg btn-secondary m-2 rounded-pill">
-                    <i class="bi bi-google"></i> Google Scholar
-                </a>
+            <div class="d-flex justify-content-center flex-wrap">
+                <a href="https://www.linkedin.com/in/shaif-chowdhury-95m/" class="btn btn-primary m-2 rounded-pill">LinkedIn</a>
+                <a href="https://github.com/Shaif95" class="btn btn-dark m-2 rounded-pill">GitHub</a>
+                <a href="https://scholar.google.com/citations?user=qJkLzcAAAAAJ&hl=en" class="btn btn-secondary m-2 rounded-pill">Google Scholar</a>
             </div>
         </section>
 
-        <!-- Recent Updates Section -->
-        <section id="recent-updates" class="my-5">
+        <!-- Recent Updates -->
+        <section id="recent-updates" class="glass-card mb-4">
             <h2>Recent Updates</h2>
             <ul class="list-group">
-                <li class="list-group-item update-item">
+                <li class="list-group-item">
                     <span class="update-date">May 2025</span>
-                    <span class="update-content" style="color: green;">Defended my PhD dissertation titled "Deep Learning of Visual Features with Limited Supervision".</span>
+                    <span class="update-content gold">Defended my PhD dissertation titled "Deep Learning of Visual Features with Limited Supervision".</span>
                 </li>
-                <li class="list-group-item update-item">
+                <li class="list-group-item">
                     <span class="update-date">January 2025</span>
                     <span class="update-content" style="color: green;">Had 2 papers accepted in IEEE BigData Workshops.</span>
                 </li>
-                <li class="list-group-item update-item">
+                <li class="list-group-item">
                     <span class="update-date">August 2024</span>
                     <span class="update-content" style="color: red;">Completed Machine Learning Internship at Dow, Midland, MI.</span>
                 </li>
-                <li class="list-group-item update-item">
+                <li class="list-group-item">
                     <span class="update-date">August 2024</span>
                     <span class="update-content" style="color: blue;">Became a reviewer for ICLR.</span>
-                </li>
-                <li class="list-group-item update-item">
-                    <span class="update-date">June 2024</span>
-                    <span class="update-content" style="color: red;">Reviewed papers for NEURIPS 2024 and WACV 2025.</span>
-                </li>
-                <li class="list-group-item update-item">
-                    <span class="update-date">January 2024</span>
-                    <span class="update-content" style="color: blue;">Published paper: "Active Learning Strategy Using Contrastive Learning and K-means for Aquatic Invasive Species Recognition" at WACV24 Workshop.</span>
                 </li>
             </ul>
         </section>
 
         <!-- Education Section -->
-        <section id="education" class="my-5">
+        <section id="education" class="glass-card mb-4">
             <h2>Education</h2>
             <ul class="list-group">
                 <li class="list-group-item">
-                    <strong>PhD in Computer Science, Baylor University</strong>, TX, USA (Aug 2020 - Aug 2025)<br>
-                    Research on Deep Learning and Computer Vision. Dissertation on “Deep Learning of Visual Features with Limited Supervision.”
+                    <strong>PhD in Computer Science, Baylor University</strong>, TX, USA (Aug 2020 - Aug 2025)
                 </li>
                 <li class="list-group-item">
-                    <strong>B.Tech in Information Technology, Institute of Engineering & Management</strong>, Kolkata, India (Aug 2013 - May 2017)
+                    <strong>B.Tech in Information Technology, IEM</strong>, Kolkata, India (Aug 2013 - May 2017)
                 </li>
             </ul>
         </section>
 
         <!-- Experience Section -->
-        <section id="experience" class="my-5">
+        <section id="experience" class="glass-card mb-4">
             <h2>Experience</h2>
             <ul class="list-group">
                 <li class="list-group-item">
-                    <strong>Machine Learning Intern (ADISE), Dow</strong>, Midland, MI, USA (May 2024 - Aug 2024)<br>
-                    Developed and implemented lane detection and quality measurement algorithms using dashcam video data.
+                    <strong>Machine Learning Intern (ADISE), Dow</strong>, Midland, MI (May 2024 - Aug 2024)
                 </li>
                 <li class="list-group-item">
-                    <strong>Data Science Intern, AI Camp</strong>, Palo Alto, CA, USA (May 2023 - Sep 2023)<br>
-                    Improved quality of response from Large Language Model (GPT) using Augmentation technique with LangChain and OpenAI API.
+                    <strong>Data Science Intern, AI Camp</strong>, Palo Alto, CA (May 2023 - Sep 2023)
                 </li>
                 <li class="list-group-item">
-                    <strong>Graduate Research Assistant, Baylor University</strong>, Waco, TX, USA (Aug 2020 - Present)<br>
-                    Worked on research grants, publications, and developed models for invasive species recognition and life stage identification.
+                    <strong>Graduate Research Assistant, Baylor University</strong>, Waco, TX (Aug 2020 - Present)
                 </li>
             </ul>
         </section>
 
         <!-- Schedule Section -->
-        <section id="schedule" class="my-5">
+        <section id="schedule" class="glass-card mb-4">
             <h2>My Schedule</h2>
-            <iframe src="https://outlook.office365.com/owa/calendar/c7d65473ed6844098598b2374c3852b5@baylor.edu/5f215084a2204a9fbc6c2432d43eb7172122430901130837161/calendar.html" width="100%" height="800"></iframe>
+            <iframe src="https://outlook.office365.com/owa/calendar/c7d65473ed6844098598b2374c3852b5@baylor.edu/5f215084a2204a9fbc6c2432d43eb7172122430901130837161/calendar.html"
+                    width="100%" height="800" style="border: none;"></iframe>
         </section>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        © 2025 Shaif Chowdhury
     </footer>
 
-    <!-- Bootstrap JS and Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
