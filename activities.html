@@ -1,101 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activities - Shaif Chowdhury</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Activities - Shaif Chowdhury</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .glass-card {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.4) !important;
+      backdrop-filter: blur(10px);
+    }
+  </style>
 </head>
-<body style="background-color: #87CEEB;"> <!-- Sky-blue background -->
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Shaif Chowdhury</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="publications.html">Publications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="activities.html">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Me</a>
-                    </li>
-                                  </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container my-5">
-        <section id="activities">
-            <h2>Activities and Experience</h2>
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <strong>PhD in Computer Science, Baylor University</strong>, TX, USA (Aug 2020 - May 2025)<br>
-                    Research on Deep Learning and Computer Vision. Dissertation on “Deep Learning of Visual Features with Limited Supervision.”
-                </li>
-                <li class="list-group-item">
-                    <strong>B.Tech in Information Technology, Institute of Engineering & Management</strong>, Kolkata, India (Aug 2013 - May 2017)
-                </li>
-                <li class="list-group-item">
-                    <strong>Machine Learning Intern (ADISE), Dow</strong>, Midland, MI, USA (May 2024 - Aug 2024)<br>
-                    Developed and implemented lane detection and quality measurement algorithms using dashcam video data.
-                </li>
-                <li class="list-group-item">
-                    <strong>Data Science Intern, AI Camp</strong>, Palo Alto, CA, USA (May 2023 - Sep 2023)<br>
-                    Improved quality of response from Large Language Model (GPT) using Augmentation technique with LangChain and OpenAI API.
-                </li>
-                <li class="list-group-item">
-                    <strong>Graduate Research Assistant, Baylor University</strong>, Waco, TX, USA (Aug 2020 - Present)<br>
-                    Helped secure TPWD research grants, published in ISVC and WACV, and developed models for invasive species recognition and life stage identification.
-                </li>
-                <li class="list-group-item">
-                    <strong>Graduate Research Assistant, Rochester Inst of Tech</strong>, R2 Research Univ., Rochester, NY, USA (Aug 2019 - June 2020)<br>
-                    Developed SLAM loop closure system with a Deep Learning based Hashing model.
-                </li>
-                <li class="list-group-item">
-                    <strong>Data Analysis and Visualization Intern, Central Institute of Drug Research</strong>, India (Oct 2017 - Apr 2019)<br>
-                    Conducted Literature survey about diseases with Data analysis and Map visualizations.
-                </li>
-                <li class="list-group-item">
-                    <strong>Tweetsy.io (SaaS)</strong> (2022 - 2023)<br>
-                    Tweet searching, scheduling, AI paraphrasing; Used AWS EC2 for backend, Sagemaker for ML, MongoDB for Database. Raised angel investment.
-                </li>
-                <li class="list-group-item">
-                    <strong>Efficient Privacy Preserving Federated Learning</strong> (2023 - 2024)<br>
-                    Created a federated learning strategy to improve communication efficiency and class balance using dropout and quantization.
-                </li>
-                <li class="list-group-item">
-                    <strong>Mayo Clinic Stroke Classification</strong> (2021)<br>
-                    Neural network model to predict blood clot type. Used Hyperparameter Tuning, Feature Engineering to get top performance.
-                </li>
-                <li class="list-group-item">
-                    <strong>Option Trading using Black Scholes</strong> (2022 - 2023)<br>
-                    Implemented option trading system using Black Scholes. Used python with NumPy, Scikit-learn for programming.
-                </li>
-                <li class="list-group-item">
-                    <strong>Reviewer at Neural Information Processing Systems (NEURIPS 2024)</strong>
-                </li>
-                <li class="list-group-item">
-                    <strong>Won a Computer Vision Hackathon AirView</strong>, Rochester, NY. (2020)
-                </li>
-                <li class="list-group-item">
-                    <strong>Volunteered at the International Student center</strong>, Baylor Univ. (2021 - 2023)
-                </li>
-            </ul>
-        </section>
+<body>
+  <!-- Transparent Glass Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Shaif Chowdhury</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+          <li class="nav-item"><a class="nav-link active" href="activities.html">Activities</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+  <!-- Activities Content -->
+  <div class="container my-5 pt-4">
+    <section id="activities" class="glass-card mb-4 mt-5">
+      <h2>Activities and Experience</h2>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <strong>PhD in Computer Science, Baylor University</strong>, TX, USA (Aug 2020 - Aug 2025)
+        </li>
+        <li class="list-group-item">
+          <strong>B.Tech in Information Technology, IEM</strong>, Kolkata, India (Aug 2013 - May 2017)
+        </li>
+        <li class="list-group-item">
+          <strong>Machine Learning Intern (ADISE), Dow</strong>, Midland, MI (May 2024 - Aug 2024)
+        </li>
+        <li class="list-group-item">
+          <strong>Data Science Intern, AI Camp</strong>, Palo Alto, CA (May 2023 - Sep 2023)
+        </li>
+        <li class="list-group-item">
+          <strong>Graduate Research Assistant, Baylor University</strong>, Waco, TX (Aug 2020 - Present)
+        </li>
+        <li class="list-group-item">
+          <strong>Graduate Research Assistant, RIT</strong>, Rochester, NY (Aug 2019 - Jun 2020)
+        </li>
+        <li class="list-group-item">
+          <strong>Intern, CDRI</strong>, India (Oct 2017 - Apr 2019)
+        </li>
+        <li class="list-group-item">
+          <strong>Tweetsy.io (SaaS)</strong> – AI-based tweet platform (2022–2023)
+        </li>
+        <li class="list-group-item">
+          <strong>Efficient Privacy-Preserving Federated Learning</strong> (2023–2024)
+        </li>
+        <li class="list-group-item">
+          <strong>Mayo Clinic Stroke Classification</strong> (2021)
+        </li>
+        <li class="list-group-item">
+          <strong>Option Trading using Black-Scholes</strong> (2022–2023)
+        </li>
+        <li class="list-group-item">
+          <strong>Reviewer, NeurIPS 2024</strong>
+        </li>
+        <li class="list-group-item">
+          <strong>Winner, AirView CV Hackathon</strong>, Rochester, NY (2020)
+        </li>
+        <li class="list-group-item">
+          <strong>Volunteer, International Student Center</strong>, Baylor Univ. (2021–2023)
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    © 2025 Shaif Chowdhury
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

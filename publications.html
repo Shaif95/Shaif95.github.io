@@ -1,110 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - Shaif Chowdhury</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Publications - Shaif Chowdhury</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f0f8ff;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .glass-card {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 15px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.4) !important;
+      backdrop-filter: blur(10px);
+    }
+
+    .table td, .table th {
+      vertical-align: middle;
+    }
+  </style>
 </head>
-<body style="background-color: #87CEEB;"> <!-- Sky-blue background -->
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Shaif Chowdhury</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="publications.html">Publications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="activities.html">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Me</a>
-                    </li>
-                
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container my-5">
-        <section id="publications">
-            <h2>Publications</h2>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th scope="col">Title</th>
-                        <th scope="col">Authors</th>
-                        <th scope="col">Conference/Journal</th>
-                        <th scope="col">Cited by</th>
-                        <th scope="col">Year</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>ACFed: Communication-Efficient & Class-Balancing Federated Learning with Adaptive Consensus Dropout & Model Quantization</td>
-                        <td>S Chowdhury, A Carney, G Hamerly, G Speegle</td>
-                        <td>IEEE International Conference on Big Data (BigData)</td>
-                        <td>—</td>
-                        <td>2024</td>
-                    </tr>
-                    <tr>
-                        <td>Efficient Selective Pre-Training for Imbalanced Fine-Tuning Data in Transfer Learning</td>
-                        <td>S Chowdhury, S Tisha, M Rahman, G Hamerly</td>
-                        <td>IEEE International Conference on Big Data (BigData)</td>
-                        <td>—</td>
-                        <td>2024</td>
-                    </tr>
-                    <tr>
-                        <td>Active Learning Strategy Using Contrastive Learning and K-means for Aquatic Invasive Species Recognition</td>
-                        <td>S Chowdhury, G Hamerly, M McGarrity</td>
-                        <td>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</td>
-                        <td>3</td>
-                        <td>2024</td>
-                    </tr>
-                    <tr>
-                        <td>Video-based recognition of aquatic invasive species larvae using attention-lstm transformer</td>
-                        <td>S Chowdhury, SN Tisha, ME McGarrity, G Hamerly</td>
-                        <td>International Symposium on Visual Computing</td>
-                        <td>3</td>
-                        <td>2023</td>
-                    </tr>
-                    <tr>
-                        <td>Recognition of aquatic invasive species larvae using autoencoder-based feature averaging</td>
-                        <td>S Chowdhury, G Hamerly</td>
-                        <td>International Symposium on Visual Computing</td>
-                        <td>6</td>
-                        <td>2022</td>
-                    </tr>
-                    <tr>
-                        <td>Vehicle detection and counting using haar feature-based classifier</td>
-                        <td>S Choudhury, SP Chattopadhyay, TK Hazra</td>
-                        <td>8th Annual Industrial Automation and Electromechanical Engineering Conference</td>
-                        <td>81</td>
-                        <td>2017</td>
-                    </tr>
-                    <tr>
-                        <td>Traffic Surveillance Using Image Recognition on Distributed Platform</td>
-                        <td>TK Hazra, S Choudhury, SP Chattopadhyay</td>
-                        <td>International Journal of Science and Research (IJSR)</td>
-                        <td>2</td>
-                        <td>2017</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+<body>
+  <!-- Transparent Glass Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Shaif Chowdhury</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="publications.html">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="activities.html">Activities</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+  <!-- Publications Content -->
+  <div class="container my-5 pt-5">
+    <section id="publications" class="glass-card mt-5">
+      <h2 class="mb-4">Publications</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle">
+          <thead class="table-light">
+            <tr>
+              <th>Title</th>
+              <th>Authors</th>
+              <th>Conference/Journal</th>
+              <th>Cited by</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ACFed: Communication-Efficient & Class-Balancing Federated Learning with Adaptive Consensus Dropout & Model Quantization</td>
+              <td>S Chowdhury, A Carney, G Hamerly, G Speegle</td>
+              <td>2024 IEEE International Conference on Big Data (BigData), pp. 7707–7716</td>
+              <td>—</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Efficient Selective Pre-Training for Imbalanced Fine-Tuning Data in Transfer Learning</td>
+              <td>S Chowdhury, S Tisha, M Rahman, G Hamerly</td>
+              <td>2024 IEEE International Conference on Big Data (BigData), pp. 6982–6991</td>
+              <td>—</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Active Learning Strategy Using Contrastive Learning and K-means for Aquatic Invasive Species Recognition</td>
+              <td>S Chowdhury, G Hamerly, M McGarrity</td>
+              <td>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)</td>
+              <td>4</td>
+              <td>2024</td>
+            </tr>
+            <tr>
+              <td>Video-based Recognition of Aquatic Invasive Species Larvae Using Attention-LSTM Transformer</td>
+              <td>S Chowdhury, SN Tisha, ME McGarrity, G Hamerly</td>
+              <td>International Symposium on Visual Computing, pp. 224–235</td>
+              <td>3</td>
+              <td>2023</td>
+            </tr>
+            <tr>
+              <td>Recognition of Aquatic Invasive Species Larvae Using Autoencoder-Based Feature Averaging</td>
+              <td>S Chowdhury, G Hamerly</td>
+              <td>International Symposium on Visual Computing, pp. 145–161</td>
+              <td>6</td>
+              <td>2022</td>
+            </tr>
+            <tr>
+              <td>Vehicle Detection and Counting Using Haar Feature-Based Classifier</td>
+              <td>S Choudhury, SP Chattopadhyay, TK Hazra</td>
+              <td>2017 8th Annual Industrial Automation and Electromechanical Engineering Conference</td>
+              <td>83</td>
+              <td>2017</td>
+            </tr>
+            <tr>
+              <td>Traffic Surveillance Using Image Recognition on Distributed Platform</td>
+              <td>TK Hazra, S Choudhury, SP Chattopadhyay</td>
+              <td>International Journal of Science and Research (IJSR) 6(4), pp. 612–616</td>
+              <td>2</td>
+              <td>2017</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    © 2025 Shaif Chowdhury
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
