@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSEN 5320 — Artificial Intelligence (Fall 2025)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    :root{
+      --glass-bg: rgba(255,255,255,0.15);
+      --glass-bg-strong: rgba(255,255,255,0.25);
+    }
+    body {
+      background: linear-gradient(135deg,#eef7ff 0%, #f6fffb 100%);
+      font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+    }
+    .navbar {
+      background: rgba(0, 0, 0, 0.55) !important;
+      backdrop-filter: blur(10px);
+    }
+    .glass-header {
+      min-height: 260px;
+      background: linear-gradient(to right, #dbeafe, #e0f7fa);
+      display: flex;
+      align-items: center;
+    }
+    .glass-card {
+      backdrop-filter: blur(10px);
+      background: var(--glass-bg);
+      border-radius: 16px;
+      box-shadow: 0 6px 28px rgba(0,0,0,.10);
+      padding: 20px;
+    }
+    .glass-card h2, .glass-card h3 {
+      scroll-margin-top: 90px;
+    }
+    .chip {
+      display:inline-block; padding:4px 10px; border-radius:999px;
+      background: var(--glass-bg-strong); margin:2px 6px 2px 0; font-size:.9rem;
+      border: 1px solid rgba(0,0,0,.06);
+    }
+    .keyline { border-left: 4px solid #cfe3ff; padding-left: 14px; }
+    .section-title { font-weight: 700; letter-spacing:.2px; }
+    .schedule-table thead th { position: sticky; top: 60px; background: #ffffffee; backdrop-filter: blur(6px); z-index: 1;}
+    .badge-soft {
+      background: #fff; border:1px solid rgba(0,0,0,.1); border-radius: 10px; padding:3px 8px; font-weight:500;
+    }
+    .small-muted{ color:#5f6b7a; font-size:.95rem; }
+    footer { background:#0b1220; color:#fff; }
+    a[href^="http"]::after { content: "↗"; margin-left: .25rem; font-size: .85em; opacity:.6; }
+  </style>
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Shaif Chowdhury</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">CSEN 5320</a></li>
+          <li class="nav-item"><a class="nav-link" href="#schedule">Schedule</a></li>
+          <li class="nav-item"><a class="nav-link" href="#policies">Policies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#support">Support</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="glass-header">
+    <div class="container">
+      <div class="row align-items-center gy-3">
+        <div class="col-lg-8">
+          <div class="keyline">
+            &nsbp
+            &nsbp
+            <h1 class="display-5 mb-1">Artificial Intelligence — CSEN 5320 (Fall 2025)</h1>
+            <p class="lead mb-2">Department of Electrical Engineering & Computer Science</p>
+            <div class="d-flex flex-wrap gap-2 small">
+              <span class="chip">Section: 001</span>
+              <span class="chip">Credits: 3</span>
+              <span class="chip">Mode: Face to Face</span>
+              <span class="chip">Room: ENGC 109</span>
+              <span class="chip">Time: TR 09:30–10:45 AM</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container my-5">
+    <!-- Instructor -->
+    <section id="instructor" class="glass-card mb-4">
+      <h2 class="section-title">Instructor Information</h2>
+      <div class="row gy-3">
+        <div class="col-md-6">
+          <ul class="list-unstyled mb-0">
+            <li><strong>Instructor:</strong> Shaif Chowdhury, PhD</li>
+            <li><strong>Office Location:</strong> EC208</li>
+            <li><strong>Student Support Hours (F2F):</strong> TR 12:30 PM – 3:00 PM (ENGC 208)</li>
+            <li><strong>Office Phone:</strong> —</li>
+            <li><strong>Email:</strong> <a href="mailto:Shaif.Chowdhury@tamuk.edu">Shaif.Chowdhury@tamuk.edu</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 small-muted">
+          <p class="mb-1">A student may request an appointment well in advance by email if posted hours are unsuitable.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Description & Prereqs -->
+    <section id="overview" class="glass-card mb-4">
+      <h2 class="section-title">Course Description & Prerequisites</h2>
+      <p class="mb-2">
+        Fundamental concepts of intelligent computer systems, knowledge representation, logical reasoning, search strategies,
+        game theory, Bayesian networks, neural networks, reinforcement learning, natural language processing, and current research
+        in AI area.
+      </p>
+      <span class="badge-soft">Prerequisite: Graduate standing in computer science</span>
+    </section>
+
+    <!-- Textbooks -->
+    <section id="textbooks" class="glass-card mb-4">
+      <h2 class="section-title">Textbooks</h2>
+      <h5 class="mb-1">Required</h5>
+      <p class="mb-2">
+        Stuart Russell and Peter Norvig, <em>Artificial Intelligence: A Modern Approach</em>, Prentice-Hall, 3rd Edition.
+        ISBN-13: 978-0134610993, ISBN-10: 0134610997
+      </p>
+      <h5 class="mb-1">Recommended</h5>
+      <p class="mb-0">
+        Ian Goodfellow, Yoshua Bengio, and Aaron Courville, <em>Deep Learning</em>, MIT Press, 2016 —
+        <a href="https://www.deeplearningbook.org/">deeplearningbook.org</a>
+      </p>
+    </section>
+
+   
+    <!-- Assessment & Grading -->
+    <section id="assessment" class="glass-card mb-4">
+      <h2 class="section-title">Course Assignments & Assessment</h2>
+      <p>Quizzes, homework, and a semester project. A midterm exam and a comprehensive final exam are included.</p>
+
+      <h3 class="mt-3">Grading Breakdown</h3>
+      <ul class="mb-2">
+        <li>Midterm Exam: <strong>15%</strong></li>
+        <li>Final Exam: <strong>15%</strong></li>
+        <li>Project: <strong>50%</strong></li>
+        <li>Homework + Quizzes: <strong>20%</strong></li>
+      </ul>
+
+      <p class="mb-2"><strong>Final Exam:</strong> Friday, <u>December 5</u>, 8:00–10:30 AM.</p>
+
+      <h5 class="mt-3">Final Letter Grades</h5>
+      <div class="row row-cols-2 row-cols-md-5 g-2">
+        <div class="col"><span class="chip">A: 90–100</span></div>
+        <div class="col"><span class="chip">B: 80–89</span></div>
+        <div class="col"><span class="chip">C: 70–79</span></div>
+        <div class="col"><span class="chip">D: 60–69</span></div>
+        <div class="col"><span class="chip">F: &lt; 60</span></div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="glass-card mb-4">
+      <h2 class="section-title">Course Schedule (by Week)</h2>
+      <p class="small-muted mb-2">DISCLAIMER — Some aspects of the schedule may be subject to change and will be announced in class and on Blackboard.</p>
+      <span></span>
+      <div class="table-responsive">
+        <table class="table table-striped schedule-table">
+          <thead>
+            <span></span>
+            <tr><th style="width:80px;">Week</th><th>Topics</th><th style="width:120px;">Chapter</th></tr>
+            <span></span>
+          </thead>
+          <tbody>
+            <span>The chapters are based on Artificial Intelligence: A Modern Approach</span>
+            <span></span>
+            <tr><td>1</td><td>Introduction</td><td>1</td></tr>
+            <tr><td>2</td><td>Search</td><td>3</td></tr>
+            <tr><td>3</td><td>Logical Agents</td><td>7</td></tr>
+            <tr><td>4</td><td>Bayesian Networks</td><td>14</td></tr>
+            <tr><td>5</td><td>Introduction to Learning</td><td>18</td></tr>
+            <tr><td>6</td><td>Linear Models &amp; Clustering</td><td>18</td></tr>
+            <tr><td>7</td><td>Deep Learning Introduction and Midterm Exam</td><td>19</td></tr>
+            <tr><td>8</td><td>Model Complexity</td><td>18</td></tr>
+            <tr><td>9</td><td>Reinforcement Learning</td><td>19</td></tr>
+            <tr><td>10</td><td>Natural Language Processing</td><td>21</td></tr>
+            <tr><td>11</td><td>Computer Vision</td><td>22</td></tr>
+            <tr><td>12</td><td>Representation Learning</td><td>24</td></tr>
+            <tr><td>13</td><td>AI Ethics</td><td>26</td></tr>
+            <tr><td>14</td><td>Final Project Presentations</td><td>—</td></tr>
+            <tr><td>15</td><td>Review &amp; Final Project Presentations</td><td>—</td></tr>
+            <tr><td>16</td><td>Review &amp; Final Exam</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Policies -->
+    <section id="policies" class="glass-card mb-4">
+      <h2 class="section-title">Course & University Policies</h2>
+
+      <h4 class="mt-2">Instructor’s Policies</h4>
+      <h6 class="mb-1">Attendance</h6>
+      <p>Attend regularly and participate in discussions and exercises. Notify the instructor in advance of planned absences for valid reasons.</p>
+
+      <h6 class="mb-1">Late/Missing Work/Extra Credit</h6>
+      <p>Late assignments accepted up to one week after the posted due date, submitted in the specified manner.</p>
+
+      <h6 class="mb-1">Use of AI in the Classroom</h6>
+      <p>AI tools (e.g., ChatGPT) are <strong>not</strong> permitted for quizzes or in-class exams. Their use in projects and homework is allowed; students are responsible for verifying AI-assisted work and using it responsibly.</p>
+
+      <hr />
+
+      <h4>University Policies</h4>
+      <ul>
+        <li><strong>Six Drop Policy:</strong> Texas Senate Bill 1231 limits course drops; see Registrar for details. <a href="http://www.tamuk.edu/registrar/RGAD_ACADEMICPROCEDURES/Drop-Policy.html">Drop Policy</a></li>
+        <li><strong>Students with Disabilities:</strong> ADA accommodations via Disability Resource Center, (361) 593-3024. <a href="https://www.tamuk.edu/shw/drc/index.html">Disability Resources</a></li>
+        <li><strong>Classroom Conduct Expectations:</strong> Maintain a productive environment; disruptive behavior may be referred to the Dean of Students. <a href="http://www.tamuk.edu/dean/dean_files/studenthandbook.pdf">Student Handbook</a></li>
+        <li><strong>Academic Misconduct:</strong> Cheating, plagiarism, fabrication, falsification, bribery, threat, and related misconduct are prohibited; Turnitin may be used.</li>
+        <li><strong>Harassment/Discrimination:</strong> Report to Office of Compliance, (361) 593-4758, <a href="mailto:titleix@tamuk.edu">titleix@tamuk.edu</a> or Dean of Students. Anonymous reporting: <a href="https://secure.ethicspoint.com/domain/media/en/gui/19681/index.html">EthicsPoint</a></li>
+        <li><strong>Pregnant & Parenting Students:</strong> Contact Office of Compliance (<a href="mailto:TitleIX@tamuk.edu">TitleIX@tamuk.edu</a>) or Student Health & Wellness (<a href="mailto:Jo.alaniz@tamuk.edu">Jo.alaniz@tamuk.edu</a>), 361-593-3991 / 361-593-2382.</li>
+      </ul>
+    </section>
+
+    <!-- Support Services -->
+    <section id="support" class="glass-card mb-4">
+      <h2 class="section-title">University Support Services</h2>
+      <div class="row gy-3">
+        <div class="col-md-6">
+          <h5>Pathways Academic Assistance Center</h5>
+          <ul class="small">
+            <li>Tutoring & academic support (in-person/online); peer tutors and study skills</li>
+            <li><strong>Location:</strong> Jernigan Library 220 • <strong>Phone:</strong> 361-593-5223</li>
+            <li><strong>Email:</strong> <a href="mailto:paactutoring@tamuk.edu">paactutoring@tamuk.edu</a> • <a href="https://www.tamuk.edu/studentsuccess/PAAC">Website</a></li>
+            <li><a href="http://javsuccess.tamuk.edu/">Appointments</a> • IG: tamuksuccess_squad</li>
+          </ul>
+          <h5>Writing Center</h5>
+          <ul class="small">
+            <li>Consultations at any stage of writing</li>
+            <li><strong>Location:</strong> Jernigan Library 217 • <strong>Phone:</strong> 361-593-2744</li>
+            <li><strong>Email:</strong> <a href="mailto:success@tamuk.edu">success@tamuk.edu</a> • <a href="https://www.tamuk.edu/studentsuccess/writingcenter">Website</a></li>
+          </ul>
+          <h5>Success Peer Mentoring</h5>
+          <ul class="small">
+            <li>Connections to campus/community; time management, motivation, study strategies</li>
+            <li><strong>Location:</strong> Jernigan Library 210 & 242 • <strong>Phone:</strong> 361-593-5800</li>
+            <li><strong>Email:</strong> <a href="mailto:success@tamuk.edu">success@tamuk.edu</a> • <a href="https://www.tamuk.edu/studentsuccess/mentoring">Website</a></li>
+          </ul>
+          <h5>Jernigan Library</h5>
+          <ul class="small">
+            <li>Books, laptops, calculators, reserves; computer lab; South Texas Archives</li>
+            <li><strong>Location:</strong> 1050 N. University Blvd. • <strong>Phone:</strong> 361-593-3319</li>
+            <li><a href="https://lib.tamuk.edu/">Library</a> • <a href="https://libguides.tamuk.edu/home">LibGuides</a> • <a href="https://libguides.tamuk.edu/LibraryServices/AskLibrarian">Ask Us!</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Mental Health & Well-Being</h5>
+          <ul class="small">
+            <li>Personal counseling (short-term), U-Turn Program, Next Steps Career Counseling</li>
+            <li><strong>Location:</strong> 1210 N. Retama St. • <strong>Phone:</strong> 361-593-5080</li>
+            <li><strong>Email:</strong> <a href="mailto:counselingservices@tamuk.edu">counselingservices@tamuk.edu</a> • <a href="https://www.tamuk.edu/shw/counseling-services">Website</a></li>
+            <li>After-hours crisis: UPD 361-593-2611 • Suicide & Crisis Lifeline: 988 • Telus Health app 24/7</li>
+          </ul>
+          <h5>Disability Resources</h5>
+          <ul class="small">
+            <li>Equal access & reasonable accommodations</li>
+            <li><strong>Location:</strong> 1210 N. Retama St. • <strong>Phone:</strong> 361-593-3024</li>
+            <li><strong>Email:</strong> <a href="mailto:drc.center@tamuk.edu">drc.center@tamuk.edu</a> • <a href="https://www.tamuk.edu/shw/drc/index.html">Website</a></li>
+          </ul>
+          <h5>Advising</h5>
+          <ul class="small">
+            <li>Stay on track with degree plans; academic/career goals; campus resources</li>
+            <li><strong>Phone:</strong> 361-593-3935 • <strong>Email:</strong> <a href="mailto:success@tamuk.edu">success@tamuk.edu</a> • <a href="https://www.tamuk.edu/studentsuccess/advising.html">Website</a></li>
+          </ul>
+          <h5>Career Engagement</h5>
+          <ul class="small">
+            <li>Resumes, mock interviews, mentoring, Javelina Careers (Handshake), Career Expos</li>
+            <li><strong>Location:</strong> Sam Fore Hall, Rm. 208 • <strong>Phone:</strong> 361-593-2217</li>
+            <li><strong>Email:</strong> <a href="mailto:hirejavelinas@tamuk.edu">hirejavelinas@tamuk.edu</a> • <a href="https://www.tamuk.edu/careerengagement/">Website</a></li>
+          </ul>
+          <h5>Student Government Association (SGA)</h5>
+          <ul class="small">
+            <li>Advocacy, leadership opportunities, events, student voice</li>
+            <li><strong>Location:</strong> Jernigan Library, 3rd Floor • <strong>Phone:</strong> 361-593-3610</li>
+            <li><strong>Email:</strong> <a href="mailto:sga@tamuk.edu">sga@tamuk.edu</a> • <a href="https://www.tamuk.edu/sga/">Website</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="glass-card mb-4">
+      <h2 class="section-title">Contact</h2>
+      <p class="mb-1">For questions about CSEN 5320, email <a href="mailto:Shaif.Chowdhury@tamuk.edu">Shaif.Chowdhury@tamuk.edu</a>.</p>
+      <p class="small-muted mb-0">The syllabus and schedule are subject to change.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4">
+    <div class="container small">
+      © 2025 Shaif Chowdhury • CSEN 5320 (Fall 2025)
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
